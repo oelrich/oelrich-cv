@@ -11,10 +11,10 @@ function renderTime(when: TimeDesc) {
     if (when.from === when.to) {
       return (<div className="text-sm">{when.from}</div>)
     } else {
-      return (<div className="text-sm">{when.from} &mdash; {when.to}</div>)
+      return (<div className="text-sm">{when.from} &ndash; {when.to}</div>)
     }
   } else {
-    return (<div className="text-sm">{when.from} &mdash;</div>)
+    return (<div className="text-sm">{when.from} &ndash;</div>)
   }
 }
 
@@ -69,7 +69,7 @@ function renderOrganisation(entry: Details, lang: string) {
 
 function renderWhenWhat(when: TimeDesc, what: Details, lang: string) {
   return (
-      <div className="flex flex-row p-1 py-3  print:py-0">
+      <div className="flex flex-row p-1 py-3  print:py-1">
         <div className="flex flex-col basis-1/4 pr-2">
           {renderOrganisation(what, lang)}
           {renderTime(when)}

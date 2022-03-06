@@ -103,7 +103,7 @@
         "title": "SaaS Operations Engineer",
         "description": [
           {
-            "text": ""
+            "text": "Introducering av agil metodik och Continuous Integration. Pådrivande i introduktion av TDD och parprogrammering."
           }
         ]
       },
@@ -114,7 +114,7 @@
         "title": "SaaS Operations Engineer",
         "description": [
           {
-            "text": ""
+            "text": "Introducing agile methodology and Continuous Integration. Driving in introducing TDD and pair programming."
           }
         ]
       }
@@ -134,7 +134,7 @@
         "title": "CIO",
         "description": [
           {
-            "text": "Rådgivande runt och utvecklande av verksamhetes system. Enklare statistik, modellering av affärssystem och arbete på visualisering av högdimensionella data."
+            "text": "Design och utveckling av företagets IT-system. Utveckling av ett statistikpaket för högdimensionella data. Utveckling av en webapp för visualisering av högdimensionella data."
           }
         ]
       },
@@ -145,7 +145,7 @@
         "title": "CIO",
         "description": [
           {
-            "text": "Rådgivande runt och utvecklande av verksamhetes system. Enklare statistik, modellering av affärssystem och arbete på visualisering av högdimensionella data."
+            "text": "Design and development of company IT systems. Development of a statistics package for high dimensional data. Development of a visualisation web app for high dimensional data."
           }
         ]
       }
@@ -228,7 +228,7 @@
         "title": "Systemutvecklare",
         "description": [
           {
-            "text": "Arbetade på publikationssystemet DiVA och kulturarvsplattformen Alvin."
+            "text": "Utveckling av publikationssystemet DiVA samt kulturarvsplattformen Alvin."
           }
         ]
       },
@@ -240,7 +240,7 @@
         "title": "System Developer",
         "description": [
           {
-            "text": "Development work on the publication system DiVA and the digitized cultural heritage system Alvin."
+            "text": "Development on the publication system DiVA and the digitized cultural heritage system Alvin."
           }
         ]
       }
@@ -322,11 +322,14 @@
         "title": "Systemutvecklare",
         "description": [
           {
+            "text": "Utveckling av orderdatabas och diverse verktygsprogram."
+          },
+          {
             "text": "Utveckling av BARCdb, en databas och webapp för biobanker och relaterade tjänster.",
             "ref": "galli2014biobanking"
           },
           {
-            "text": "bla bla",
+            "text": "Bidrog med ett accelererat lager för annoteringar skrivet i Javascript.",
             "ref": "bombrun2017decoding"
           }
         ]
@@ -339,7 +342,10 @@
         "title": "System Developer",
         "description": [
           {
-            "text": "Development of BARCdb",
+            "text": "Development of an ordering database and various utilities."
+          },
+          {
+            "text": "Development of BARCdb, a database for biobanks and related services.",
             "ref": "galli2014biobanking"
           },
           {
@@ -365,7 +371,7 @@
         "title": "IT-tekniker",
         "description": [
           {
-            "text": "Drift, utveckling och underhåll av Linuxbaserade tjänster. Support och utveckling av hjälpprogram. Visualisering av data i R. Pådrivande av förändring runt IT-säkerhet."
+            "text": "Drift, utveckling och underhåll av Linuxbaserade tjänster. Support och utveckling av hjälpprogram. Visualisering av data i R. Pådrivande av förändring runt IT-säkerhet. Utveckling på MolMeth, en plattform för laboratorieprotokoll."
           }
         ]
       },
@@ -377,7 +383,7 @@
         "title": "IT technician",
         "description": [
           {
-            "text": "Maintained and developed Linux based services. Technical support and development of research software. Visualization of research data in R. Advocated and informed regarding IT security."
+            "text": "Maintained and developed Linux based services. Technical support and development of research software. Visualization of research data in R. Advocated and informed regarding IT security. Development on MolMeth a laboratory procedure platform."
           }
         ]
       }
@@ -398,7 +404,7 @@
         "title": "Forskningsassistent",
         "description": [
           {
-            "text": "Drift och underhåll av Linuxbaserade tjänster. Utveckling av Java applikation för arbetsflöden i labbet."
+            "text": "Drift och underhåll av Linuxbaserade tjänster. Driftsatte Bacula backuplösning. Utveckling av Java applikation för arbetsflöden i labbet."
           }
         ]
       },
@@ -410,7 +416,7 @@
         "title": "Research assistant",
         "description": [
           {
-            "text": "Maintained Linux based services. Development on a Java application for laboratory workflows."
+            "text": "Maintained Linux based services. Deployed a Bacula backup system. Development on a Java application for laboratory workflows."
           }
         ]
       }
@@ -440,7 +446,7 @@
           "Uppsala Universitet",
           "Information Technology"
         ],
-        "title": "Computer Science",
+        "title": "Computer Science Program",
         "description": [
           {
             "text": "Focus on algorithm development, discrete mathematics and bio informatics."
