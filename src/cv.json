@@ -1,0 +1,514 @@
+[
+  {
+    "when": {
+      "from": "2021-10-11",
+      "to": "2021-10-18"
+    },
+    "category": "training",
+    "details": {
+      "eng": {
+        "organisation": [
+          "Medicaldevicehq"
+        ],
+        "title": "Introduction to Usability Engineering and IEC 62366-1",
+        "description": [
+          {
+            "text": "Introduction to Usability Engineering with focus on medical devices."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "when": {
+      "from": "2021-08-18",
+      "to": "2021-08-25"
+    },
+    "category": "training",
+    "details": {
+      "eng": {
+        "organisation": [
+          "Medicaldevicehq"
+        ],
+        "title": "Risk Management for Medical Devices and ISO 14971:2019",
+        "description": [
+          {
+            "text": "A blended learning training course, with approximately 14 contact hours, on Risk Management."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "when": {
+      "from": "2021-08"
+    },
+    "category": "employment",
+    "details": {
+      "swe": {
+        "organisation": [
+          "ProCanT AB"
+        ],
+        "title": "IT Arkitekt",
+        "description": [
+          {
+            "text": ""
+          }
+        ]
+      },
+      "eng": {
+        "organisation": [
+          "ProCanT AB"
+        ],
+        "title": "IT Architect",
+        "description": [
+          {
+            "text": ""
+          }
+        ]
+      }
+    }
+  },
+  {
+    "when": {
+      "from": "2021-06-23",
+      "to": "2021-06-23"
+    },
+    "category": "training",
+    "details": {
+      "eng": {
+        "organisation": [
+          "Mediteq"
+        ],
+        "title": "Software development according to IEC 62304",
+        "description": [
+          {
+            "text": "Introductory training in IEC 62304, ISO 14971."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "when": {
+      "from": "2021-02",
+      "to": "2021-07"
+    },
+    "category": "employment",
+    "details": {
+      "swe": {
+        "organisation": [
+          "ProCanT AB"
+        ],
+        "title": "SaaS Operations Engineer",
+        "description": [
+          {
+            "text": ""
+          }
+        ]
+      },
+      "eng": {
+        "organisation": [
+          "ProCanT AB"
+        ],
+        "title": "SaaS Operations Engineer",
+        "description": [
+          {
+            "text": ""
+          }
+        ]
+      }
+    }
+  },
+  {
+    "when": {
+      "from": "2019-02",
+      "to": "2021-01"
+    },
+    "category": "employment",
+    "details": {
+      "swe": {
+        "organisation": [
+          "Vesicode AB"
+        ],
+        "title": "CIO",
+        "description": [
+          {
+            "text": "Rådgivande runt och utvecklande av verksamhetes system. Enklare statistik, modellering av affärssystem och arbete på visualisering av högdimensionella data."
+          }
+        ]
+      },
+      "eng": {
+        "organisation": [
+          "Vesicode AB"
+        ],
+        "title": "CIO",
+        "description": [
+          {
+            "text": "Rådgivande runt och utvecklande av verksamhetes system. Enklare statistik, modellering av affärssystem och arbete på visualisering av högdimensionella data."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "when": {
+      "from": "2018-06-04",
+      "to": "2018-06-05"
+    },
+    "category": "training",
+    "details": {
+      "swe": {
+        "organisation": [
+          "Ribomation"
+        ],
+        "title": "Clean Code",
+        "description": [
+          {
+            "text": "Clean code, teknisk skuld, enhetstester och arkitektur."
+          }
+        ]
+      },
+      "eng": {
+        "organisation": [
+          "Ribomation"
+        ],
+        "title": "Clean Code",
+        "description": [
+          {
+            "text": "Clean Code, technical debt, unit testing and architecture."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "when": {
+      "from": "2018-05-03",
+      "to": "2018-05-04"
+    },
+    "category": "training",
+    "details": {
+      "swe": {
+        "organisation": [
+          "Informator"
+        ],
+        "title": "Testdriven utveckling",
+        "description": [
+          {
+            "text": "T1832"
+          }
+        ]
+      },
+      "eng": {
+        "organisation": [
+          "Informator"
+        ],
+        "title": "Test driven development",
+        "description": [
+          {
+            "text": "T1832"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "when": {
+      "from": "2018-03",
+      "to": "2019-01"
+    },
+    "category": "employment",
+    "details": {
+      "swe": {
+        "organisation": [
+          "Uppsala Universitet",
+          "Avdelningen för Biblioteksstöd"
+        ],
+        "title": "Systemutvecklare",
+        "description": [
+          {
+            "text": "Arbetade på publikationssystemet DiVA och kulturarvsplattformen Alvin."
+          }
+        ]
+      },
+      "eng": {
+        "organisation": [
+          "Uppsala University",
+          "Library Systems Unit"
+        ],
+        "title": "System Developer",
+        "description": [
+          {
+            "text": "Development work on the publication system DiVA and the digitized cultural heritage system Alvin."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "when": {
+      "from": "2016-10",
+      "to": "2017-01"
+    },
+    "category": "education",
+    "details": {
+      "swe": {
+        "organisation": [
+          "Uppsala Universitet",
+          "Informationsteknologi"
+        ],
+        "title": "Villkorsmodellering för kombinatorisk optimering, 5.0 hp",
+        "description": [
+          {
+            "text": "1DL449"
+          }
+        ]
+      },
+      "eng": {
+        "organisation": [
+          "Uppsala University",
+          "Information Technology"
+        ],
+        "title": "Constraint Modelling for Combinatorial Optimisation, 5.0 c",
+        "description": [
+          {
+            "text": "1DL449"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "category": "author",
+    "reference": "bombrun2017decoding",
+    "citation": {
+      "type": "book",
+      "title": "Decoding Gene Expression in 2D and 3D",
+      "author": "Bombrun, Maxime and Ranefall, Petter and Lindblad, Joakim and Allalou, Amin and Partel, Gabriele and Solorzano, Leslie and Qian, Xiaoyan and Nilsson, Mats and Wählby, Carolina",
+      "booktitle": "Scandinavian Conference on Image Analysis",
+      "pages": "257--268",
+      "year": "2017",
+      "organisation": "Springer"
+    }
+  },
+  {
+    "category": "author",
+    "reference": "galli2014biobanking",
+    "citation": {
+      "type": "paper",
+      "title": "The Biobanking Analysis Resource Catalogue (BARCdb): a new research tool for the analysis of biobank samples",
+      "author": "Galli, Joakim and Oelrich, Johan and Taussig, Michael J and Andreasson, Ulrika and Ortega-Paino, Eva and Landegren, Ulf",
+      "journal": "Nucleic acids research",
+      "volume": "43",
+      "number": "D1",
+      "pages": "D1158--D1162",
+      "year": "2014",
+      "publisher": "Oxford University Press"
+    }
+  },
+  {
+    "when": {
+      "from": "2013-04",
+      "to": "2018-02"
+    },
+    "category": "employment",
+    "details": {
+      "swe": {
+        "organisation": [
+          "Uppsala Universitet",
+          "Immunologi, Genetik och Patologi"
+        ],
+        "title": "Systemutvecklare",
+        "description": [
+          {
+            "text": "Utveckling av BARCdb, en databas och webapp för biobanker och relaterade tjänster.",
+            "ref": "galli2014biobanking"
+          },
+          {
+            "text": "bla bla",
+            "ref": "bombrun2017decoding"
+          }
+        ]
+      },
+      "eng": {
+        "organisation": [
+          "Uppsala University",
+          "Immunology, Genetics and Pathology"
+        ],
+        "title": "System Developer",
+        "description": [
+          {
+            "text": "Development of BARCdb",
+            "ref": "galli2014biobanking"
+          },
+          {
+            "text": "Assisted in writing an accelerated visualisation layer in Javascript.",
+            "ref": "bombrun2017decoding"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "when": {
+      "from": "2009-12",
+      "to": "2013-03"
+    },
+    "category": "employment",
+    "details": {
+      "swe": {
+        "organisation": [
+          "Uppsala Universitet",
+          "Immunologi, Genetik och Patologi"
+        ],
+        "title": "IT-tekniker",
+        "description": [
+          {
+            "text": "Drift, utveckling och underhåll av Linuxbaserade tjänster. Support och utveckling av hjälpprogram. Visualisering av data i R. Pådrivande av förändring runt IT-säkerhet."
+          }
+        ]
+      },
+      "eng": {
+        "organisation": [
+          "Uppsala University",
+          "Immunology, Genetics and Pathology"
+        ],
+        "title": "IT technician",
+        "description": [
+          {
+            "text": "Maintained and developed Linux based services. Technical support and development of research software. Visualization of research data in R. Advocated and informed regarding IT security."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "when": {
+      "from": "2006-09",
+      "to": "2009-11"
+    },
+    "category": "employment",
+    "details": {
+      "swe": {
+        "organisation": [
+          "Uppsala Universitet",
+          "Immunologi, Genetik och Patologi"
+        ],
+        "title": "Forskningsassistent",
+        "description": [
+          {
+            "text": "Drift och underhåll av Linuxbaserade tjänster. Utveckling av Java applikation för arbetsflöden i labbet."
+          }
+        ]
+      },
+      "eng": {
+        "organisation": [
+          "Uppsala University",
+          "Immunology, Genetics and Pathology"
+        ],
+        "title": "Research assistant",
+        "description": [
+          {
+            "text": "Maintained Linux based services. Development on a Java application for laboratory workflows."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "when": {
+      "from": "2002",
+      "to": "2009"
+    },
+    "category": "education",
+    "details": {
+      "swe": {
+        "organisation": [
+          "Uppsala Universitet",
+          "Informationsteknologi"
+        ],
+        "title": "Datavetenskapligt program",
+        "description": [
+          {
+            "text": "Fokus på algoritmutveckling, diskret matematik och bioinformatik."
+          }
+        ]
+      },
+      "eng": {
+        "organisation": [
+          "Uppsala Universitet",
+          "Information Technology"
+        ],
+        "title": "Computer Science",
+        "description": [
+          {
+            "text": "Focus on algorithm development, discrete mathematics and bio informatics."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "when": {
+      "from": "1999",
+      "to": "2002"
+    },
+    "category": "education",
+    "details": {
+      "swe": {
+        "organisation": [
+          "Uppsala Universitet"
+        ],
+        "title": "Fristående kurser",
+        "description": [
+          {
+            "text": "Idé och lärdomshistoria, Praktisk filosofi och Antropologi"
+          }
+        ]
+      },
+      "eng": {
+        "organisation": [
+          "Uppsala University"
+        ],
+        "title": "Freestanding courses",
+        "description": [
+          {
+            "text": "History of Science and Ideas, Practical Philosophy, Anthropology"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "when": {
+      "from": "1995",
+      "to": "1998"
+    },
+    "category": "education",
+    "details": {
+      "swe": {
+        "organisation": [
+          "Martin Koch-gymnasiet"
+        ],
+        "title": "Naturvetenskaplig linje",
+        "description": [
+          {
+            "text": "Elektronik, filosofi och design av Motorola 68000-baserad dator."
+          }
+        ]
+      },
+      "eng": {
+        "organisation": [
+          "Martin Koch-gymnasiet"
+        ],
+        "title": "Natural Science Program",
+        "description": [
+          {
+            "text": "Electronics, philosophy and design of a Motorola 68000 based computer."
+          }
+        ]
+      }
+    }
+  }
+]
