@@ -9,7 +9,7 @@
 /coverage
 
 # production
-/build
+# /build # WE LIVE IN PRODUCTION!
 
 # misc
 .DS_Store
