@@ -52,7 +52,7 @@
         "title": "IT Arkitekt",
         "description": [
           {
-            "text": ""
+            "text": "Design av IVDD produkter. Design av händelsekösystem för laboratoriedata. Design och utveckling av ett internet of things-system skrivet i Rust för att övervaka frysar."
           }
         ]
       },
@@ -63,7 +63,7 @@
         "title": "IT Architect",
         "description": [
           {
-            "text": ""
+            "text": "Design of IVDD products. Design of laboratory data event queue system. Design and development of an Internet of Things system written in Rust for monitoring freezers."
           }
         ]
       }
