@@ -1,8 +1,8 @@
 [
   {
     "when": {
-      "from": "2021-10-11",
-      "to": "2021-10-18"
+      "from": "2021-10",
+      "to": "2021-10"
     },
     "category": "training",
     "details": {
@@ -21,8 +21,8 @@
   },
   {
     "when": {
-      "from": "2021-08-18",
-      "to": "2021-08-25"
+      "from": "2021-08",
+      "to": "2021-08"
     },
     "category": "training",
     "details": {
@@ -71,8 +71,8 @@
   },
   {
     "when": {
-      "from": "2021-06-23",
-      "to": "2021-06-23"
+      "from": "2021-06",
+      "to": "2021-06"
     },
     "category": "training",
     "details": {
@@ -153,8 +153,8 @@
   },
   {
     "when": {
-      "from": "2018-06-04",
-      "to": "2018-06-05"
+      "from": "2018-06",
+      "to": "2018-06"
     },
     "category": "training",
     "details": {
@@ -184,8 +184,8 @@
   },
   {
     "when": {
-      "from": "2018-05-03",
-      "to": "2018-05-04"
+      "from": "2018-05",
+      "to": "2018-05"
     },
     "category": "training",
     "details": {
@@ -317,7 +317,8 @@
       "swe": {
         "organisation": [
           "Uppsala Universitet",
-          "Immunologi, Genetik och Patologi"
+          "Immunologi, Genetik",
+          "och Patologi"
         ],
         "title": "Systemutvecklare",
         "description": [
@@ -337,7 +338,8 @@
       "eng": {
         "organisation": [
           "Uppsala University",
-          "Immunology, Genetics and Pathology"
+          "Immunology, Genetics",
+          "and Pathology"
         ],
         "title": "System Developer",
         "description": [
@@ -366,7 +368,8 @@
       "swe": {
         "organisation": [
           "Uppsala Universitet",
-          "Immunologi, Genetik och Patologi"
+          "Immunologi, Genetik",
+          "och Patologi"
         ],
         "title": "IT-tekniker",
         "description": [
@@ -378,7 +381,8 @@
       "eng": {
         "organisation": [
           "Uppsala University",
-          "Immunology, Genetics and Pathology"
+          "Immunology, Genetics",
+          "and Pathology"
         ],
         "title": "IT technician",
         "description": [
@@ -399,7 +403,8 @@
       "swe": {
         "organisation": [
           "Uppsala Universitet",
-          "Immunologi, Genetik och Patologi"
+          "Immunologi, Genetik",
+          "och Patologi"
         ],
         "title": "Forskningsassistent",
         "description": [
@@ -411,7 +416,8 @@
       "eng": {
         "organisation": [
           "Uppsala University",
-          "Immunology, Genetics and Pathology"
+          "Immunology, Genetics",
+          "and Pathology"
         ],
         "title": "Research assistant",
         "description": [

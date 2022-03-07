@@ -1,5 +1,5 @@
 
-import cv from './cv.json';
+import cv from "./cv.json";
 
 interface TimeDesc {
   from: string,
@@ -9,12 +9,12 @@ interface TimeDesc {
 function renderTime(when: TimeDesc) {
   if (when.to) {
     if (when.from === when.to) {
-      return (<div className="text-sm">{when.from}</div>)
+      return (<>{when.from}</>)
     } else {
-      return (<div className="text-sm">{when.from} &ndash; {when.to}</div>)
+      return (<>{when.from} &ndash; {when.to}</>)
     }
   } else {
-    return (<div className="text-sm">{when.from} &ndash;</div>)
+    return (<>{when.from} &ndash;</>)
   }
 }
 
@@ -68,16 +68,26 @@ function renderOrganisation(entry: Details, lang: string) {
 }
 
 function renderWhenWhat(when: TimeDesc, what: Details, lang: string) {
+  let org = what.eng.organisation;
+  let details = what.eng.description;
+  let title = what.eng.title;
+  if (lang === "swe" && what.swe) {
+    org = what.swe.organisation;
+    details = what.swe.description;
+    title = what.swe.title;
+  };
   return (
-      <div className="flex flex-row p-1 py-3  print:py-1">
-        <div className="flex flex-col basis-1/4 pr-2">
-          {renderOrganisation(what, lang)}
-          {renderTime(when)}
+      <div className="grid grid-cols-8 gap-x-2 gap-y-1">
+        <div className="col-span-4 row-span-2 md:col-span-2 md:row-span-1 font-bold text-l self-end">{title}</div>
+        <div className="col-span-4 justify-self-end self-end flex flex-col md:flex-row md:gap-2">
+          <div className="font-medium text-sm justify-self-end">{org[0]}</div>
+          {org.slice(1).map((elt) =>{ return (<div className="text-sm justify-self-end">{elt}</div>)})}
         </div>
-        <div className="flex flex-col basis-3/4">
-          {renderDetails(what, lang)}
-        </div>
-      </div>)  
+        <div className="col-span-4 md:col-span-2 text-sm self-end justify-self-end">{renderTime(when)}</div>
+
+        <div className="col-span-8">{details[0].text}</div>
+        {details.slice(1).map((elt) =>{ return (<div className="col-span-8">{elt.text}</div>)})}
+      </div>)
 }
 
 interface Education {
@@ -87,7 +97,7 @@ interface Education {
 }
 
 function renderEducation(entry: Education, lang: string) {
-  return (<div>{renderWhenWhat(entry.when, entry.details, lang)}</div>)
+  return (<>{renderWhenWhat(entry.when, entry.details, lang)}</>)
 }
 
 interface Employment {
@@ -97,7 +107,7 @@ interface Employment {
 }
 
 function renderEmployment(entry: Employment, lang: string) {
-  return (<div>{renderWhenWhat(entry.when, entry.details, lang)}</div>)
+  return (<>{renderWhenWhat(entry.when, entry.details, lang)}</>)
 }
 
 interface Training {
@@ -107,7 +117,7 @@ interface Training {
 }
 
 function renderTraining(entry: Training, lang: string) {
-  return (<div>{renderWhenWhat(entry.when, entry.details, lang)}</div>)
+  return (<>{renderWhenWhat(entry.when, entry.details, lang)}</>)
 }
 
 interface PaperCitation {
