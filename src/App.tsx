@@ -16,7 +16,7 @@ function App() {
   const lang = query.get("lang") ?? "eng";
   const {id} = useParams();
 
-  const url = "https://johan.oelrich.se/cv/" + (id ?? "") + "?lang=" + lang;
+  const url = "https://oelrich.github.io/oelrich-cv/" + (id ?? "") + "?lang=" + lang;
 
   return (
       <div className="w-full">
@@ -24,15 +24,19 @@ function App() {
           <div className="grow">
             <h1 className="text-3xl p-8 font-bold">CV - Johan Oelrich</h1>
             <div className="flex flex-row">
-              <address className="pr-8 pl-16">
+              <address className="pr-8 pl-16  w-56">
               Johan Oelrich<br/>
               Birkagatan 12A<br/>
               75239 Uppsala
               </address>
+              <div className="flex flex-col w-48">
+                <a href="mailto:johan@oelrich.se"><span>johan@oelrich.se</span></a>
+                <a href="https://oelrich.se">https://oelrich.se</a>
+                <a href="tel:+46707903153"><span>070-790 31 53</span></a>
+              </div>
               <div className="flex flex-col">
-                <a href="mailto:johan@oelrich.se" className="flex flex-row w-64"><span>johan@oelrich.se</span></a>
-                <a href="tel:+46707903153" className="flex flex-row w-64"><span>070-790 31 53</span></a>
-                <a href="https://www.linkedin.com/in/johanoelrich" className="flex flex-row w-64"><span>linkedin.com/in/johanoelrich</span></a>
+                <a href="https://github.com/oelrich">https://github.com/oelrich</a>
+                <a href="https://www.linkedin.com/in/johanoelrich"><span>linkedin.com/in/johanoelrich</span></a>
               </div>
             </div>
           </div>
