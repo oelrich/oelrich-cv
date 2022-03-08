@@ -103,7 +103,7 @@
         "title": "SaaS Operations Engineer",
         "description": [
           {
-            "text": "Introducering av agil metodik och Continuous Integration. Pådrivande i introduktion av TDD och parprogrammering."
+            "text": "DevOps-relaterade uppgifter. Introducering av agil metodik och Continuous Integration. Pådrivande i introduktion av TDD och parprogrammering."
           }
         ]
       },
@@ -114,7 +114,7 @@
         "title": "SaaS Operations Engineer",
         "description": [
           {
-            "text": "Introducing agile methodology and Continuous Integration. Driving in introducing TDD and pair programming."
+            "text": "DevOps related tasks. Introducing agile methodology and Continuous Integration. Driving in introducing TDD and pair programming."
           }
         ]
       }
@@ -134,7 +134,7 @@
         "title": "CIO",
         "description": [
           {
-            "text": "Design och utveckling av företagets IT-system. Utveckling av ett statistikpaket för högdimensionella data. Utveckling av en webapp för visualisering av högdimensionella data."
+            "text": "Design och utveckling av företagets IT-system. Utveckling av ett statistikpaket för högdimensionella data. Utveckling av en webbapplikation för visualisering av högdimensionella data."
           }
         ]
       },
@@ -145,7 +145,7 @@
         "title": "CIO",
         "description": [
           {
-            "text": "Design and development of company IT systems. Development of a statistics package for high dimensional data. Development of a visualisation web app for high dimensional data."
+            "text": "Design and development of company IT systems. Development of a statistics package for high dimensional data. Development of a visualisation web application for high dimensional data."
           }
         ]
       }
@@ -196,7 +196,7 @@
         "title": "Testdriven utveckling",
         "description": [
           {
-            "text": "T1832"
+            "text": "Introduktion till TDD i C++ (T1832)"
           }
         ]
       },
@@ -207,7 +207,7 @@
         "title": "Test driven development",
         "description": [
           {
-            "text": "T1832"
+            "text": "Introduction to TDD in C++ (T1832)"
           }
         ]
       }
@@ -261,7 +261,7 @@
         "title": "Villkorsmodellering för kombinatorisk optimering, 5.0 hp",
         "description": [
           {
-            "text": "1DL449"
+            "text": "Kurs i modellering av problem för lösare (1DL449)"
           }
         ]
       },
@@ -273,7 +273,7 @@
         "title": "Constraint Modelling for Combinatorial Optimisation, 5.0 c",
         "description": [
           {
-            "text": "1DL449"
+            "text": "Course in problem modelling for solvers (1DL449)"
           }
         ]
       }
@@ -371,7 +371,7 @@
         "title": "IT-tekniker",
         "description": [
           {
-            "text": "Drift, utveckling och underhåll av Linuxbaserade tjänster. Support och utveckling av hjälpprogram. Visualisering av data i R. Pådrivande av förändring runt IT-säkerhet. Utveckling på MolMeth, en plattform för laboratorieprotokoll."
+            "text": "Drift, utveckling och underhåll av Linuxbaserade tjänster. Support och utveckling av hjälpprogram. Visualisering av data i R. Pådrivande av förändring runt IT-säkerhet. Utveckling av MolMeth, en plattform för laboratorieprotokoll."
           }
         ]
       },
@@ -383,7 +383,7 @@
         "title": "IT technician",
         "description": [
           {
-            "text": "Maintained and developed Linux based services. Technical support and development of research software. Visualization of research data in R. Advocated and informed regarding IT security. Development on MolMeth a laboratory procedure platform."
+            "text": "Maintained and developed Linux based services. Technical support and development of research software. Visualization of research data in R. Advocated and informed regarding IT security. Worked on a laboratory procedure platform called MolMeth."
           }
         ]
       }
@@ -404,7 +404,7 @@
         "title": "Forskningsassistent",
         "description": [
           {
-            "text": "Drift och underhåll av Linuxbaserade tjänster. Driftsatte Bacula backuplösning. Utveckling av Java applikation för arbetsflöden i labbet."
+            "text": "Drift och underhåll av Linuxbaserade tjänster. Driftsatte Bacula backuplösning för gruppen. Utveckling av Java applikation för arbetsflöden i labbet."
           }
         ]
       },
@@ -416,7 +416,7 @@
         "title": "Research assistant",
         "description": [
           {
-            "text": "Maintained Linux based services. Deployed a Bacula backup system. Development on a Java application for laboratory workflows."
+            "text": "Maintained Linux based services. Deployed a Bacula backup system for the group. Development on a Java application for laboratory workflows."
           }
         ]
       }
