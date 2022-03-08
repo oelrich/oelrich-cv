@@ -83,7 +83,7 @@
         "title": "Software development according to IEC 62304",
         "description": [
           {
-            "text": "Introductory training in IEC 62304, ISO 14971."
+            "text": "Introductory training in IEC 62304 and ISO 14971."
           }
         ]
       }
@@ -317,8 +317,7 @@
       "swe": {
         "organisation": [
           "Uppsala Universitet",
-          "Immunologi, Genetik",
-          "och Patologi"
+          "Immunologi, Genetik och Patologi"
         ],
         "title": "Systemutvecklare",
         "description": [
@@ -338,8 +337,7 @@
       "eng": {
         "organisation": [
           "Uppsala University",
-          "Immunology, Genetics",
-          "and Pathology"
+          "Immunology, Genetics and Pathology"
         ],
         "title": "System Developer",
         "description": [
@@ -368,8 +366,7 @@
       "swe": {
         "organisation": [
           "Uppsala Universitet",
-          "Immunologi, Genetik",
-          "och Patologi"
+          "Immunologi, Genetik och Patologi"
         ],
         "title": "IT-tekniker",
         "description": [
@@ -381,8 +378,7 @@
       "eng": {
         "organisation": [
           "Uppsala University",
-          "Immunology, Genetics",
-          "and Pathology"
+          "Immunology, Genetics and Pathology"
         ],
         "title": "IT technician",
         "description": [
@@ -403,8 +399,7 @@
       "swe": {
         "organisation": [
           "Uppsala Universitet",
-          "Immunologi, Genetik",
-          "och Patologi"
+          "Immunologi, Genetik och Patologi"
         ],
         "title": "Forskningsassistent",
         "description": [
@@ -416,8 +411,7 @@
       "eng": {
         "organisation": [
           "Uppsala University",
-          "Immunology, Genetics",
-          "and Pathology"
+          "Immunology, Genetics and Pathology"
         ],
         "title": "Research assistant",
         "description": [

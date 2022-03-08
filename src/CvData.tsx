@@ -18,53 +18,18 @@ function renderTime(when: TimeDesc) {
   }
 }
 
-interface SimpleDescription {
+type DescriptionSegment = {
   text: string,
-}
-
-interface ReferencingDescription {
-  text: string,
-  reference: string,
-}
-
-type DescriptionSegment = SimpleDescription | ReferencingDescription;
-
+  ref?: string,
+};
 interface Experience {
   organisation: Array<string>,
   title: string,
   description: Array<DescriptionSegment>,
 }
-
-function renderDescription(entries: Array<DescriptionSegment>) {
-  return entries.map((entry) => { return (<div>{entry.text}</div>)})
-}
-
-function renderExperience(entry: Experience) {
-  return (<div className="flex flex-col">
-            <div className="font-bold text-l">{entry.title}</div>
-            {renderDescription(entry.description)}
-          </div>)
-}
-
 interface Details {
   swe?: Experience,
   eng: Experience,
-}
-
-function renderDetails(entry: Details, lang: string) {
-  if (lang === "swe" && entry.swe) {
-     return renderExperience(entry.swe);
-  } else { 
-    return renderExperience(entry.eng);
-  }
-}
-
-function renderOrganisation(entry: Details, lang: string) {
-  let org = entry.eng.organisation;
-  if (lang === "swe" && entry.swe?.organisation) {
-    org = entry.swe?.organisation 
-  };
-  return org.map((line) => <div className="text-l font-semibold">{line}</div>)
 }
 
 function renderWhenWhat(when: TimeDesc, what: Details, lang: string) {
@@ -77,16 +42,17 @@ function renderWhenWhat(when: TimeDesc, what: Details, lang: string) {
     title = what.swe.title;
   };
   return (
-      <div className="grid grid-cols-8 gap-x-2 gap-y-1">
-        <div className="col-span-4 row-span-2 md:col-span-2 md:row-span-1 font-bold text-l self-end">{title}</div>
-        <div className="col-span-4 justify-self-end self-end flex flex-col md:flex-row md:gap-2">
-          <div className="font-medium text-sm justify-self-end">{org[0]}</div>
-          {org.slice(1).map((elt) =>{ return (<div className="text-sm justify-self-end">{elt}</div>)})}
+      <div className="md:grid md:grid-cols-8 md:col-span-8 print:grid print:grid-cols-8 print:col-span-8">
+        <h3 className="font-semibold md:col-start-3 md:col-span-6 print:col-start-3 print:col-span-6">{title}</h3>
+        <div className="text-sm md:col-span-2 print:col-span-2">
+          <div className="font-medium">{org[0]}</div>
+          {org.slice(1).map((elt) =>{ return (<div className="">{elt}</div>)})}
+          <div className="">{renderTime(when)}</div>
         </div>
-        <div className="col-span-4 md:col-span-2 text-sm self-end justify-self-end">{renderTime(when)}</div>
-
-        <div className="col-span-8">{details[0].text}</div>
-        {details.slice(1).map((elt) =>{ return (<div className="col-span-8">{elt.text}</div>)})}
+        <p className="md:col-span-6 print:col-span-6"><span>{details[0].text}</span>{details.slice(1).map((elt) => {
+          return (elt.ref ? <a href={"#" + elt.ref} className="col-span-8 block">{elt.text} <span className="underline">[ref]</span></a> : <span className="col-span-8 block">{elt.text}</span>)
+            })}</p>
+        
       </div>)
 }
 
@@ -120,6 +86,10 @@ function renderTraining(entry: Training, lang: string) {
   return (<>{renderWhenWhat(entry.when, entry.details, lang)}</>)
 }
 
+function renderRefAuthor(author: string) {
+  const primary = author.split(" and ")[0].split(",")
+  return (<>{primary[1] + " " + primary[0] + " et al."}</>)
+}
 interface PaperCitation {
   "type": "paper",
   title: string,
@@ -133,7 +103,9 @@ interface PaperCitation {
 }
 
 function renderPaper(paper: PaperCitation) {
-  return (<div><div>{paper.title} in {paper.journal}</div><div>{paper.author}</div></div>)
+  return (<>
+      <span>{renderRefAuthor(paper.author)}</span> <span className="italic">"{paper.title}"</span>. In: <span className="italic">{paper.journal}</span> <span>{paper.volume}</span>.<span>{paper.number}</span> <span>({paper.year})</span>, pp. <span>{paper.pages.replace("--","–")}</span>.
+    </>)
 }
 
 interface BookCitation {
@@ -147,7 +119,9 @@ interface BookCitation {
 }
 
 function renderBook(book: BookCitation) {
-  return (<div><div>{book.title} in {book.booktitle}</div><div>{book.author}</div></div>)
+  return (<>
+    <span>{renderRefAuthor(book.author)}</span> <span>"{book.title}"</span> In: <span className="italic">{book.booktitle}</span>. <span>{book.organisation}</span>. <span>{book.year}</span>, pp. <span>{book.pages.replace("--","–")}</span>.
+    </>)
 }
 
 type Citation = PaperCitation | BookCitation
@@ -167,7 +141,7 @@ interface Author {
 }
 
 function renderAuthor(entry: Author) {
-  return (<div id={entry.reference}>{renderCitation(entry.citation)}</div>);
+  return (<div id={entry.reference} className="col-span-8">{renderCitation(entry.citation)}</div>);
 }
 
 type CvEntry = Education | Employment | Training | Author
