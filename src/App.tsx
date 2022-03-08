@@ -12,10 +12,10 @@ function App() {
 
   let query = new URLSearchParams(useLocation().search);
 
-  const lang = query.get("lang") ?? "eng";
+  const lang = query.get("lang") ?? "swe";
   const {id} = useParams();
 
-  const url = "https://oelrich.github.io/oelrich-cv/" + (id ?? "") + "?lang=" + lang;
+  const url = "https://oelrich.github.io/oelrich-cv/?lang=" + lang;
 
   return (
       <div className="w-full p-5">
