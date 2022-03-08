@@ -141,7 +141,7 @@ interface Author {
 }
 
 function renderAuthor(entry: Author) {
-  return (<div id={entry.reference} className="col-span-8">{renderCitation(entry.citation)}</div>);
+  return (<div id={entry.reference} className="col-start-3 col-span-5">{renderCitation(entry.citation)}</div>);
 }
 
 type CvEntry = Education | Employment | Training | Author

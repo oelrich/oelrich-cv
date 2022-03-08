@@ -44,16 +44,16 @@ function App() {
         </div>
       </div>
 
-      <div className="flex flex-col pt-8 gap-4 md:w-3/4 m-auto md:grid md:grid-cols-8 print:w-full print:grid print:grid-cols-8 xl:w-1/2">
+      <div className="flex flex-col pt-8 gap-y-4 md:w-3/4 m-auto md:grid md:grid-cols-8 print:w-full print:grid print:grid-cols-8 xl:w-1/2">
         <h2 className="font-bold text-xl md:col-span-6 md:col-start-3 print:col-span-6 print:col-start-3">{(lang === "swe") ? (<>Arbetslivserfarenhet</>) : (<>Work experience</>) }</h2>
         {employment?.map( (entry) => { return renderCV(entry, lang) }) }
       </div>
-      <div className="break-before-page flex flex-col pt-8 gap-4 md:w-3/4 m-auto md:grid md:grid-cols-8 print:w-full print:grid print:grid-cols-8 xl:w-1/2">
+      <div className="break-before-page flex flex-col pt-8 gap-y-4 md:w-3/4 m-auto md:grid md:grid-cols-8 print:w-full print:grid print:grid-cols-8 xl:w-1/2">
         <h2 className="font-bold text-xl md:col-span-6 md:col-start-3 print:col-span-6 print:col-start-3">{(lang === "swe") ? (<>Utbildning</>) : (<>Education</>) }</h2>
         {training?.map( (entry) => { return renderCV(entry, lang) }) }
         { education?.map( (entry) => { return renderCV(entry, lang) }) }
       </div>
-      <div className="break-before-page flex flex-col pt-8 gap-4 md:w-3/4 m-auto md:grid md:grid-cols-8 print:w-full print:grid print:grid-cols-8 xl:w-1/2">
+      <div className="break-before-page flex flex-col pt-8 gap-y-4 md:w-3/4 m-auto md:grid md:grid-cols-8 print:w-full print:grid print:grid-cols-8 xl:w-1/2">
         <h2 className="font-bold text-xl md:col-span-6 md:col-start-3 print:col-span-6 print:col-start-3">{(lang === "swe") ? (<>Publikationer</>) : (<>Publications</>) }</h2>
         { publications?.map( (entry) => { return renderCV(entry, lang) } )}
       </div>
