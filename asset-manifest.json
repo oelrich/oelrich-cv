@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/oelrich-cv/static/css/main.ceeb4594.css",
-    "main.js": "/oelrich-cv/static/js/main.3eacb2df.js",
+    "main.js": "/oelrich-cv/static/js/main.ddfd4020.js",
     "static/js/787.c261e663.chunk.js": "/oelrich-cv/static/js/787.c261e663.chunk.js",
     "index.html": "/oelrich-cv/index.html",
     "main.ceeb4594.css.map": "/oelrich-cv/static/css/main.ceeb4594.css.map",
-    "main.3eacb2df.js.map": "/oelrich-cv/static/js/main.3eacb2df.js.map",
+    "main.ddfd4020.js.map": "/oelrich-cv/static/js/main.ddfd4020.js.map",
     "787.c261e663.chunk.js.map": "/oelrich-cv/static/js/787.c261e663.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ceeb4594.css",
-    "static/js/main.3eacb2df.js"
+    "static/js/main.ddfd4020.js"
   ]
 }
