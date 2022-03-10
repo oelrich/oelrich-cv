@@ -1,6 +1,5 @@
 //import React from "react";
 import { loadCV, renderCV } from "./CvData";
-import {useLocation, useParams} from "react-router-dom";
 import QRCode from "react-qr-code";
 
 function App() {
@@ -9,13 +8,9 @@ function App() {
   const employment = cv_data.get("employment");
   const training = cv_data.get("training");
   const publications = cv_data.get("author");
+  const responsibilities = cv_data.get("responsibility");
 
-  let query = new URLSearchParams(useLocation().search);
-
-  const lang = query.get("lang") ?? "swe";
-  const {id} = useParams();
-
-  const url = "https://oelrich.github.io/oelrich-cv/?lang=" + lang;
+  const url = "https://oelrich.github.io/oelrich-cv";
 
   return (
       <div className="w-full p-5">
@@ -45,17 +40,32 @@ function App() {
       </div>
 
       <div className="flex flex-col pt-8 gap-y-4 md:w-3/4 m-auto md:grid md:grid-cols-8 print:w-full print:grid print:grid-cols-8 xl:w-1/2">
-        <h2 className="font-bold text-xl md:col-span-6 md:col-start-3 print:col-span-6 print:col-start-3">{(lang === "swe") ? (<>Arbetslivserfarenhet</>) : (<>Work experience</>) }</h2>
-        {employment?.map( (entry) => { return renderCV(entry, lang) }) }
+        <h2 className="font-bold text-xl md:col-span-6 md:col-start-3 print:col-span-6 print:col-start-3">Arbetslivserfarenheter</h2>
+        {employment?.map( (entry) => { return renderCV(entry, "swe") }) }
       </div>
       <div className="break-before-page flex flex-col pt-8 gap-y-4 md:w-3/4 m-auto md:grid md:grid-cols-8 print:w-full print:grid print:grid-cols-8 xl:w-1/2">
-        <h2 className="font-bold text-xl md:col-span-6 md:col-start-3 print:col-span-6 print:col-start-3">{(lang === "swe") ? (<>Utbildning</>) : (<>Education</>) }</h2>
-        {training?.map( (entry) => { return renderCV(entry, lang) }) }
-        { education?.map( (entry) => { return renderCV(entry, lang) }) }
+        <h2 className="font-bold text-xl md:col-span-6 md:col-start-3 print:col-span-6 print:col-start-3">Utbildning</h2>
+        { education?.map( (entry) => { return renderCV(entry, "swe") }) }
+      </div>
+      <div className="flex flex-col pt-8 gap-y-4 md:w-3/4 m-auto md:grid md:grid-cols-8 print:w-full print:grid print:grid-cols-8 xl:w-1/2">
+        <h2 className="font-bold text-xl md:col-span-6 md:col-start-3 print:col-span-6 print:col-start-3">Kurser och vidareutbildning</h2>
+        {training?.map( (entry) => { return renderCV(entry, "swe") }) }
       </div>
       <div className="break-before-page flex flex-col pt-8 gap-y-4 md:w-3/4 m-auto md:grid md:grid-cols-8 print:w-full print:grid print:grid-cols-8 xl:w-1/2">
-        <h2 className="font-bold text-xl md:col-span-6 md:col-start-3 print:col-span-6 print:col-start-3">{(lang === "swe") ? (<>Publikationer</>) : (<>Publications</>) }</h2>
-        { publications?.map( (entry) => { return renderCV(entry, lang) } )}
+        <h2 className="font-bold text-xl md:col-span-6 md:col-start-3 print:col-span-6 print:col-start-3">Språk</h2>
+        <p className="md:col-start-3 md:col-span-6 print:col-span-6 print:col-start-3">Modersmål svenska. Talar och skriver engelska flytande.</p>
+      </div>
+      <div className="flex flex-col pt-8 gap-y-4 md:w-3/4 m-auto md:grid md:grid-cols-8 print:w-full print:grid print:grid-cols-8 xl:w-1/2">
+        <h2 className="font-bold text-xl md:col-span-6 md:col-start-3 print:col-span-6 print:col-start-3">Förtroendeuppdrag</h2>
+        { responsibilities?.map( (entry) => { return renderCV(entry, "swe") } )}
+      </div>
+      <div className="flex flex-col pt-8 gap-y-4 md:w-3/4 m-auto md:grid md:grid-cols-8 print:w-full print:grid print:grid-cols-8 xl:w-1/2">
+        <h2 className="font-bold text-xl md:col-span-6 md:col-start-3 print:col-span-6 print:col-start-3">Publikationer</h2>
+        { publications?.map( (entry) => { return renderCV(entry, "swe") } )}
+      </div>
+      <div className="flex flex-col pt-8 gap-y-4 md:w-3/4 m-auto md:grid md:grid-cols-8 print:w-full print:grid print:grid-cols-8 xl:w-1/2">
+        <h2 className="font-bold text-xl md:col-span-6 md:col-start-3 print:col-span-6 print:col-start-3">Referenser</h2>
+        <p className="md:col-start-3 md:col-span-6 print:col-span-6 print:col-start-3">Referenser lämnas på begäran.</p>
       </div>
     </div>
   );

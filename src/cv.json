@@ -4,6 +4,7 @@
       "from": "2021-10",
       "to": "2021-10"
     },
+    "print": "current",
     "category": "training",
     "details": {
       "eng": {
@@ -13,7 +14,7 @@
         "title": "Introduction to Usability Engineering and IEC 62366-1",
         "description": [
           {
-            "text": "Introduction to Usability Engineering with focus on medical devices."
+            "text": "Kursens handlade huvudsakligen om hur IEC 62366-1 används för att ta fram säker medicinsk utrustning, men stor vikt lades också på samarbete runt iterativ design av användargränssnitt."
           }
         ]
       }
@@ -24,6 +25,7 @@
       "from": "2021-08",
       "to": "2021-08"
     },
+    "print": "current",
     "category": "training",
     "details": {
       "eng": {
@@ -33,7 +35,7 @@
         "title": "Risk Management for Medical Devices and ISO 14971:2019",
         "description": [
           {
-            "text": "A blended learning training course, with approximately 14 contact hours, on Risk Management."
+            "text": "En kombination av interaktiv onlinekurs och föreläsningar om riskhantering för medicinsk utrustning."
           }
         ]
       }
@@ -43,6 +45,7 @@
     "when": {
       "from": "2021-08"
     },
+    "print": "current",
     "category": "employment",
     "details": {
       "swe": {
@@ -52,7 +55,7 @@
         "title": "IT Arkitekt",
         "description": [
           {
-            "text": "Design av IVDD produkter. Design av händelsekösystem för laboratoriedata. Design och utveckling av ett internet of things-system skrivet i Rust för att övervaka frysar."
+            "text": "Som arkitekt ansvarade jag för övergripande design av IVDD produkter. Utöver det så var jag med och designade ett händelsebaserat lagringssystem för labbdata samt design och utveckling av ett internet of things-system skrivet i Rust för att övervaka frysar."
           }
         ]
       },
@@ -74,6 +77,7 @@
       "from": "2021-06",
       "to": "2021-06"
     },
+    "print": "current",
     "category": "training",
     "details": {
       "eng": {
@@ -83,7 +87,7 @@
         "title": "Software development according to IEC 62304",
         "description": [
           {
-            "text": "Introductory training in IEC 62304 and ISO 14971."
+            "text": "Introduktion till utveckling av medicinsk utrustning och riskanalys enligt IEC 62304 och ISO 14971."
           }
         ]
       }
@@ -94,6 +98,7 @@
       "from": "2021-02",
       "to": "2021-07"
     },
+    "print": "current",
     "category": "employment",
     "details": {
       "swe": {
@@ -103,7 +108,7 @@
         "title": "SaaS Operations Engineer",
         "description": [
           {
-            "text": "DevOps-relaterade uppgifter. Introducering av agil metodik och Continuous Integration. Pådrivande i introduktion av TDD och parprogrammering."
+            "text": "I första hand så ansvarade jag för driftsättning av DevOps-relaterade tjänster och mjukvaror som Jira och Jenkins. Utöver det så introducerade jag agil metodik, testdriven utveckling, parprogrammering och continuous integration."
           }
         ]
       },
@@ -125,6 +130,7 @@
       "from": "2019-02",
       "to": "2021-01"
     },
+    "print": "current",
     "category": "employment",
     "details": {
       "swe": {
@@ -134,7 +140,7 @@
         "title": "CIO",
         "description": [
           {
-            "text": "Design och utveckling av företagets IT-system. Utveckling av ett statistikpaket för högdimensionella data. Utveckling av en webbapplikation för visualisering av högdimensionella data."
+            "text": "Som CIO hade jag övergripande ansvar för företagets IT-system. I tjänsten ingick även utveckling av en webbapplikation för visualisering av högdimensionella data. Till denna utvecklade jag även ett statistikpaket för paketering av labbdata."
           }
         ]
       },
@@ -156,6 +162,7 @@
       "from": "2018-06",
       "to": "2018-06"
     },
+    "print": "current",
     "category": "training",
     "details": {
       "swe": {
@@ -165,7 +172,7 @@
         "title": "Clean Code",
         "description": [
           {
-            "text": "Clean code, teknisk skuld, enhetstester och arkitektur."
+            "text": "En introduktion till clean code, teknisk skuld, enhetstester och arkitektur."
           }
         ]
       },
@@ -176,7 +183,7 @@
         "title": "Clean Code",
         "description": [
           {
-            "text": "Clean Code, technical debt, unit testing and architecture."
+            "text": "An introduction to Clean Code, technical debt, unit testing and architecture."
           }
         ]
       }
@@ -187,6 +194,7 @@
       "from": "2018-05",
       "to": "2018-05"
     },
+    "print": "current",
     "category": "training",
     "details": {
       "swe": {
@@ -196,7 +204,7 @@
         "title": "Testdriven utveckling",
         "description": [
           {
-            "text": "Introduktion till TDD i C++ (T1832)"
+            "text": "Introduktion till TDD i C++. En stor del av kursen fokuserade även på omstrukturering av kod för att få den mer testbar. (T1832)"
           }
         ]
       },
@@ -207,7 +215,41 @@
         "title": "Test driven development",
         "description": [
           {
-            "text": "Introduction to TDD in C++ (T1832)"
+            "text": "Introduction to TDD in C++. A large part of the course focused on refactoring poorly written code to make it more testable. (T1832)"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "when": {
+      "from": "2018-06",
+      "to": "2019-01"
+    },
+    "print": "current",
+    "category": "responsibility",
+    "details": {
+      "swe": {
+        "organisation": [
+          "Uppsala Universitet",
+          "Avdelningen för Biblioteksstöd"
+        ],
+        "title": "Lika villkorsombud",
+        "description": [
+          {
+            "text": "Representant för lika villkor på arbetsplatsen och del i lika villkorsgruppen som planerade insatser och aktiviteter, exempelvis bokcirklar och föreläsningar."
+          }
+        ]
+      },
+      "eng": {
+        "organisation": [
+          "Uppsala University",
+          "Library Systems Unit"
+        ],
+        "title": "Equal Opportunities Officer",
+        "description": [
+          {
+            "text": "Contact point for equal opportunities issues in the workplace. Conducting equal opportunities workshops and information campaigns."
           }
         ]
       }
@@ -218,6 +260,7 @@
       "from": "2018-03",
       "to": "2019-01"
     },
+    "print": "current",
     "category": "employment",
     "details": {
       "swe": {
@@ -228,7 +271,7 @@
         "title": "Systemutvecklare",
         "description": [
           {
-            "text": "Utveckling av publikationssystemet DiVA samt kulturarvsplattformen Alvin."
+            "text": "Tjänsten innebar utveckling av publikationssystemet DiVA samt kulturarvsplattformen Alvin. Här lärde jag mig hur man jobbar med agila metoder, parprogrammering, testdriven utveckling och continuous integration."
           }
         ]
       },
@@ -240,7 +283,7 @@
         "title": "System Developer",
         "description": [
           {
-            "text": "Development on the publication system DiVA and the digitized cultural heritage system Alvin."
+            "text": "Development on the publication system DiVA and the digitized cultural heritage system Alvin. Alvin is especially interesting in that the system makes digitized works form the university collections available to everyone."
           }
         ]
       }
@@ -251,6 +294,7 @@
       "from": "2016-10",
       "to": "2017-01"
     },
+    "print": "current",
     "category": "education",
     "details": {
       "swe": {
@@ -261,7 +305,7 @@
         "title": "Villkorsmodellering för kombinatorisk optimering, 5.0 hp",
         "description": [
           {
-            "text": "Kurs i modellering av problem för lösare (1DL449)"
+            "text": "Vi lärde oss hur ett problem kan modelleras för att sedan optimeras av en lösare."
           }
         ]
       },
@@ -273,7 +317,7 @@
         "title": "Constraint Modelling for Combinatorial Optimisation, 5.0 c",
         "description": [
           {
-            "text": "Course in problem modelling for solvers (1DL449)"
+            "text": "We learned how to model a problem in order to let it be optimised by a solver."
           }
         ]
       }
@@ -309,9 +353,10 @@
   },
   {
     "when": {
-      "from": "2013-04",
+      "from": "(2006-09)",
       "to": "2018-02"
     },
+    "print": "current",
     "category": "employment",
     "details": {
       "swe": {
@@ -322,14 +367,14 @@
         "title": "Systemutvecklare",
         "description": [
           {
-            "text": "Utveckling av orderdatabas och diverse verktygsprogram."
-          },
-          {
-            "text": "Utveckling av BARCdb, en databas och webapp för biobanker och relaterade tjänster.",
+            "text": "Hälften av min tid lades på utveckling av BARCdb, en databas och webapp för biobanker och relaterade tjänster.",
             "ref": "galli2014biobanking"
           },
           {
-            "text": "Bidrog med ett accelererat lager för annoteringar skrivet i Javascript.",
+            "text": "Resten av tiden lades på att utveckla ett orderhanteringssystem för gruppen samt diverse små verktygsprogram. Jag fick även undervisa en del i R, Rust och liknande verktyg i insatser att hjälpa forskarna mer effektivt lösa sina problem."
+          },
+          {
+            "text": "En kort men intressant uppgift var ett bidrag med ett accelererat lager för annoteringar skrivet i Javascript.",
             "ref": "bombrun2017decoding"
           }
         ]
@@ -342,14 +387,64 @@
         "title": "System Developer",
         "description": [
           {
-            "text": "Development of an ordering database and various utilities."
-          },
-          {
-            "text": "Development of BARCdb, a database for biobanks and related services.",
+            "text": "Most of my time was put into the development of BARCdb, a database for biobanks and related services.",
             "ref": "galli2014biobanking"
           },
           {
-            "text": "Assisted in writing an accelerated visualisation layer in Javascript.",
+            "text": "The remainder of my time was put towards the development of an ordering system for the group, alongside of several small utility applications. I also got to teach R, Rust and similar tools in order to help the researchers more efficiently solve their problems."
+          },
+          {
+            "text": "A short byt interesting task was writing an accelerated visualisation layer in Javascript.",
+            "ref": "bombrun2017decoding"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "when": {
+      "from": "2013-04",
+      "to": "2018-02"
+    },
+    "print": "old",
+    "category": "employment",
+    "details": {
+      "swe": {
+        "organisation": [
+          "Uppsala Universitet",
+          "Immunologi, Genetik och Patologi"
+        ],
+        "title": "Systemutvecklare",
+        "description": [
+          {
+            "text": "Hälften av min tid lades på utveckling av BARCdb, en databas och webapp för biobanker och relaterade tjänster.",
+            "ref": "galli2014biobanking"
+          },
+          {
+            "text": "Resten av tiden lades på att utveckla ett orderhanteringssystem för gruppen samt diverse små verktygsprogram. Jag fick även undervisa en del i R, Rust och liknande verktyg i insatser att hjälpa forskarna mer effektivt lösa sina problem."
+          },
+          {
+            "text": "En kort men intressant uppgift var ett bidrag med ett accelererat lager för annoteringar skrivet i Javascript.",
+            "ref": "bombrun2017decoding"
+          }
+        ]
+      },
+      "eng": {
+        "organisation": [
+          "Uppsala University",
+          "Immunology, Genetics and Pathology"
+        ],
+        "title": "System Developer",
+        "description": [
+          {
+            "text": "Most of my time was put into the development of BARCdb, a database for biobanks and related services.",
+            "ref": "galli2014biobanking"
+          },
+          {
+            "text": "The remainder of my time was put towards the development of an ordering system for the group, alongside of several small utility applications. I also got to teach R, Rust and similar tools in order to help the researchers more efficiently solve their problems."
+          },
+          {
+            "text": "A short byt interesting task was writing an accelerated visualisation layer in Javascript.",
             "ref": "bombrun2017decoding"
           }
         ]
@@ -361,6 +456,7 @@
       "from": "2009-12",
       "to": "2013-03"
     },
+    "print": "old",
     "category": "employment",
     "details": {
       "swe": {
@@ -371,7 +467,7 @@
         "title": "IT-tekniker",
         "description": [
           {
-            "text": "Drift, utveckling och underhåll av Linuxbaserade tjänster. Support och utveckling av hjälpprogram. Visualisering av data i R. Pådrivande av förändring runt IT-säkerhet. Utveckling av MolMeth, en plattform för laboratorieprotokoll."
+            "text": "Tjänsten fortsatte med ungefär samma uppgifter som tidigare, men började också innehålla mer visualisering av data i statistikprogrammet R. Samtidigt så började jag intressera mig för IT-säkerhet och ökade fokuset på det för tjänsterna. Jag började också arbeta på MolMeth, en mjukvara för att hantera protokoll för labbet."
           }
         ]
       },
@@ -394,6 +490,7 @@
       "from": "2006-09",
       "to": "2009-11"
     },
+    "print": "old",
     "category": "employment",
     "details": {
       "swe": {
@@ -404,7 +501,7 @@
         "title": "Forskningsassistent",
         "description": [
           {
-            "text": "Drift och underhåll av Linuxbaserade tjänster. Driftsatte Bacula backuplösning för gruppen. Utveckling av Java-applikation för arbetsflöden i labbet."
+            "text": "I första hand utvecklade jag en Java-applikation som skulle hålla ordning på arbetsflöden i labbet. Utöver det så hade jag hand om drift och underhåll av en uppsättning Linuxbaserade tjänster. En av tjänsterna jag var med och driftsatte var Bacula, en backuplösning för gruppen."
           }
         ]
       },
@@ -416,7 +513,7 @@
         "title": "Research assistant",
         "description": [
           {
-            "text": "Maintained Linux based services. Deployed a Bacula backup system for the group. Development on a Java application for laboratory workflows."
+            "text": "My main work was on a Java application that would keep track of workflows in the lab. Aside from that I also managed a collection of Linux based services. One service I was part in deploying was Bacula, a back up system for the group."
           }
         ]
       }
@@ -427,6 +524,7 @@
       "from": "2002",
       "to": "2009"
     },
+    "print": "current",
     "category": "education",
     "details": {
       "swe": {
@@ -437,7 +535,7 @@
         "title": "Datavetenskapligt program",
         "description": [
           {
-            "text": "Fokus på algoritmutveckling, diskret matematik och bioinformatik."
+            "text": "Mitt fokus låg i första hand på algoritmutveckling, diskret matematik och bioinformatik, men även utveckling av operativsystem samt kompilatorteknik."
           }
         ]
       },
@@ -449,7 +547,7 @@
         "title": "Computer Science Program",
         "description": [
           {
-            "text": "Focus on algorithm development, discrete mathematics and bio informatics."
+            "text": "My focus was primarily on algorithm development, discrete mathematics and bio informatics. But I was also fascinated by the courses on compiler technology and how to build an operating system."
           }
         ]
       }
@@ -460,6 +558,7 @@
       "from": "1999",
       "to": "2002"
     },
+    "print": "current",
     "category": "education",
     "details": {
       "swe": {
@@ -469,7 +568,7 @@
         "title": "Fristående kurser",
         "description": [
           {
-            "text": "Idé och lärdomshistoria, Praktisk filosofi och Antropologi"
+            "text": "En blandning av humaniorakurser främst inom idé- och lärdomshistoria, praktisk filosofi samt antropologi."
           }
         ]
       },
@@ -480,7 +579,7 @@
         "title": "Freestanding courses",
         "description": [
           {
-            "text": "History of Science and Ideas, Practical Philosophy, Anthropology"
+            "text": "Various courses from the humanities, primarily History of Science and Ideas, Practical Philosophy and Anthropology."
           }
         ]
       }
@@ -491,6 +590,7 @@
       "from": "1995",
       "to": "1998"
     },
+    "print": "old",
     "category": "education",
     "details": {
       "swe": {

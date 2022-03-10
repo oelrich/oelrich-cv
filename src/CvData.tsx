@@ -31,8 +31,35 @@ interface Details {
   swe?: Experience,
   eng: Experience,
 }
+interface Education {
+  "category": "education",
+  print: string,
+  when: TimeDesc,
+  details: Details
+}
+interface Employment {
+  "category": "employment",
+  print: string,
+  when: TimeDesc,
+  details: Details
+}
+interface Training {
+  "category": "training",
+  print: string,
+  when: TimeDesc,
+  details: Details
+}
 
-function renderWhenWhat(when: TimeDesc, what: Details, lang: string) {
+interface Responsibility {
+  "category": "responsibility",
+  print: string,
+  when: TimeDesc,
+  details: Details
+}
+
+
+function renderWhenWhat(when: TimeDesc, what: Details, print: string, lang: string) {
+  if (print === "old") return (<></>);
   let org = what.eng.organisation;
   let details = what.eng.description;
   let title = what.eng.title;
@@ -49,41 +76,26 @@ function renderWhenWhat(when: TimeDesc, what: Details, lang: string) {
           {org.slice(1).map((elt) =>{ return (<div className="">{elt}</div>)})}
           <div className="">{renderTime(when)}</div>
         </div>
-        <p className="md:col-span-6 print:col-span-6"><span>{details[0].text}</span>{details.slice(1).map((elt) => {
+        <p className="md:col-span-6 print:col-span-6">{details.map((elt) => {
           return (elt.ref ? <a href={"#" + elt.ref} className="col-span-8 block">{elt.text} <span className="underline">[ref]</span></a> : <span className="col-span-8 block">{elt.text}</span>)
             })}</p>
         
       </div>)
 }
 
-interface Education {
-  "category": "education",
-  when: TimeDesc,
-  details: Details
-}
-
 function renderEducation(entry: Education, lang: string) {
-  return (<>{renderWhenWhat(entry.when, entry.details, lang)}</>)
+  return (<>{renderWhenWhat(entry.when, entry.details, entry.print, lang)}</>)
 }
-
-interface Employment {
-  "category": "employment",
-  when: TimeDesc,
-  details: Details
-}
-
 function renderEmployment(entry: Employment, lang: string) {
-  return (<>{renderWhenWhat(entry.when, entry.details, lang)}</>)
-}
-
-interface Training {
-  "category": "training",
-  when: TimeDesc,
-  details: Details
+  return (<>{renderWhenWhat(entry.when, entry.details, entry.print, lang)}</>)
 }
 
 function renderTraining(entry: Training, lang: string) {
-  return (<>{renderWhenWhat(entry.when, entry.details, lang)}</>)
+  return (<>{renderWhenWhat(entry.when, entry.details, entry.print, lang)}</>)
+}
+
+function renderResponsibility(entry: Responsibility, lang: string) {
+  return (<>{renderWhenWhat(entry.when, entry.details, entry.print, lang)}</>)
 }
 
 function renderRefAuthor(author: string) {
@@ -144,13 +156,14 @@ function renderAuthor(entry: Author) {
   return (<div id={entry.reference} className="col-start-3 col-span-5">{renderCitation(entry.citation)}</div>);
 }
 
-type CvEntry = Education | Employment | Training | Author
+type CvEntry = Education | Employment | Training | Responsibility | Author
 
 export function renderCV(entry: CvEntry, lang: string) {
     switch (entry.category) {
       case "education": return renderEducation(entry, lang);
       case "employment": return renderEmployment(entry, lang);
       case "training": return renderTraining(entry, lang);
+      case "responsibility": return renderResponsibility(entry, lang);
       case "author": return renderAuthor(entry);
       default: return <div>Undefined CvEntry</div>;
     }
