@@ -1,0 +1,8 @@
+* Curriculum Vitae - Johan Oelrich
+
+Visit [[https://oelrich.github.io/oelrich-cv]] for the full experience!
+
+** A CV written in React with Tailwind CSS
+
+The idea is to have a CV that looks nice in print while providing easy access to more functionality online.
+
