@@ -1,13 +1,44 @@
 [
   {
     "when": {
+      "from": "2022-10"
+    },
+    "print": "current",
+    "category": "employment",
+    "details": {
+      "swe": {
+        "organisation": [
+          "JobTech Development"
+        ],
+        "title": "Clojure-utvecklare, open source",
+        "description": [
+          {
+            "text": "Utveckling, underhåll och drift av JobTechs Taxonomi-API. Design av API för mappning mot externa taxonomier."
+          }
+        ]
+      },
+      "eng": {
+        "organisation": [
+          "JobTech Development"
+        ],
+        "title": "Clojure developer, open source",
+        "description": [
+          {
+            "text": "Development, maintenance and operation of JobTech's Taxonomy API. Design of API for mapping against external taxonomies."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "when": {
       "from": "2021-10",
       "to": "2021-10"
     },
     "print": "current",
     "category": "training",
     "details": {
-      "eng": {
+      "swe": {
         "organisation": [
           "Medicaldevicehq"
         ],
@@ -15,6 +46,17 @@
         "description": [
           {
             "text": "Kursens handlade huvudsakligen om hur IEC 62366-1 används för att ta fram säker medicinsk utrustning, men stor vikt lades också på samarbete runt iterativ design av användargränssnitt."
+          }
+        ]
+      },
+      "eng": {
+        "organisation": [
+          "Medicaldevicehq"
+        ],
+        "title": "Introduction to Usability Engineering and IEC 62366-1",
+        "description": [
+          {
+            "text": "The course mainly focused on how IEC 62366-1 is used to develop safe medical equipment, but also on collaboration around iterative design of user interfaces."
           }
         ]
       }
@@ -28,7 +70,7 @@
     "print": "current",
     "category": "training",
     "details": {
-      "eng": {
+      "swe": {
         "organisation": [
           "Medicaldevicehq"
         ],
@@ -38,12 +80,24 @@
             "text": "En kombination av interaktiv onlinekurs och föreläsningar om riskhantering för medicinsk utrustning."
           }
         ]
+      },
+      "eng": {
+        "organisation": [
+          "Medicaldevicehq"
+        ],
+        "title": "Risk Management for Medical Devices and ISO 14971:2019",
+        "description": [
+          {
+            "text": "A combination of interactive online course and lectures on risk management for medical devices."
+          }
+        ]
       }
     }
   },
   {
     "when": {
-      "from": "2021-08"
+      "from": "2021-08",
+      "to": "2022-08"
     },
     "print": "current",
     "category": "employment",
@@ -80,6 +134,17 @@
     "print": "current",
     "category": "training",
     "details": {
+      "swe": {
+        "organisation": [
+          "Mediteq"
+        ],
+        "title": "Software development according to IEC 62304",
+        "description": [
+          {
+            "text": "Utveckling av medicinsk utrustning och riskanalys enligt IEC 62304 och ISO 14971."
+          }
+        ]
+      },
       "eng": {
         "organisation": [
           "Mediteq"
@@ -87,7 +152,7 @@
         "title": "Software development according to IEC 62304",
         "description": [
           {
-            "text": "Introduktion till utveckling av medicinsk utrustning och riskanalys enligt IEC 62304 och ISO 14971."
+            "text": "Software development of medical devices and risk analysis according to IEC 62304 and ISO 14971."
           }
         ]
       }
@@ -108,7 +173,7 @@
         "title": "SaaS Operations Engineer",
         "description": [
           {
-            "text": "I första hand så ansvarade jag för driftsättning av DevOps-relaterade tjänster och mjukvaror som Jira och Jenkins. Utöver det så introducerade jag agil metodik, testdriven utveckling, parprogrammering och continuous integration."
+            "text": "Ansvar för drift av företagets IVDD produkt. Detta innebar bland annat att introducera DevOps i form av agil metodik, testdriven utveckling, parprogrammering och continuous integration/continuous deployment."
           }
         ]
       },
@@ -119,7 +184,7 @@
         "title": "SaaS Operations Engineer",
         "description": [
           {
-            "text": "DevOps related tasks. Introducing agile methodology and Continuous Integration. Driving in introducing TDD and pair programming."
+            "text": "Responsible for the operation of the company's IVDD product. This included introducing DevOps in the form of agile methodology, test-driven development, pair programming and continuous integration/continuous deployment."
           }
         ]
       }
@@ -140,7 +205,7 @@
         "title": "CIO",
         "description": [
           {
-            "text": "Som CIO hade jag övergripande ansvar för företagets IT-system. I tjänsten ingick även utveckling av en webbapplikation för visualisering av högdimensionella data. Till denna utvecklade jag även ett statistikpaket för paketering av labbdata."
+            "text": "På mindre startup inom biotech hade jag övergripande ansvar för allt inom IT. Bland annat utveckling av en webbapplikation för visualisering av högdimensionella data, statistisk analys och arbete med molnsystem."
           }
         ]
       },
@@ -151,7 +216,7 @@
         "title": "CIO",
         "description": [
           {
-            "text": "Design and development of company IT systems. Development of a statistics package for high dimensional data. Development of a visualisation web application for high dimensional data."
+            "text": "At a small startup in biotech, I had overall responsibility for everything within IT. This included development of a web application for visualization of high-dimensional data, statistical analysis and work with cloud systems."
           }
         ]
       }
@@ -305,7 +370,7 @@
         "title": "Villkorsmodellering för kombinatorisk optimering, 5.0 hp",
         "description": [
           {
-            "text": "Vi lärde oss hur ett problem kan modelleras för att sedan optimeras av en lösare."
+            "text": "Matematisk modellering av problem för optimering i lösare."
           }
         ]
       },
@@ -317,7 +382,7 @@
         "title": "Constraint Modelling for Combinatorial Optimisation, 5.0 c",
         "description": [
           {
-            "text": "We learned how to model a problem in order to let it be optimised by a solver."
+            "text": "Mathematical modelling of problems for optimization in solvers."
           }
         ]
       }
@@ -367,11 +432,11 @@
         "title": "Systemutvecklare",
         "description": [
           {
-            "text": "Hälften av min tid lades på utveckling av BARCdb, en databas och webapp för biobanker och relaterade tjänster.",
+            "text": "Design och utveckling av BARCdb, en databas och webapp för biobanker och relaterade tjänster.",
             "ref": "galli2014biobanking"
           },
           {
-            "text": "Resten av tiden lades på att utveckla ett orderhanteringssystem för gruppen samt diverse små verktygsprogram. Jag fick även undervisa en del i R, Rust och liknande verktyg i insatser att hjälpa forskarna mer effektivt lösa sina problem."
+            "text": "Utveckling av ett orderhanteringssystem för gruppen samt diverse små verktygsprogram. En hel del undervisning i R, Rust och liknande verktyg för att hjälpa forskarna mer effektivt lösa sina problem."
           },
           {
             "text": "En kort men intressant uppgift var ett bidrag med ett accelererat lager för annoteringar skrivet i Javascript.",
