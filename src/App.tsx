@@ -34,11 +34,27 @@ function App() {
               </div>
             </div>
           </div>
-        <div className="invisible hidden md:block md:visible print:block print:visible">
-          <QRCode value={url} size={128} title="CV - Johan Oelrich" />
+        <div title="CV - Johan Oelrich" className="invisible hidden md:block md:visible print:block print:visible">
+          <QRCode value={url} size={128} />
         </div>
       </div>
-
+      <div className="flex flex-col pt-8 gap-y-4 md:w-3/4 m-auto md:grid md:grid-cols-8 print:w-full print:grid print:grid-cols-8 xl:w-1/2">
+        <h2 className="font-bold text-xl md:col-span-6 md:col-start-3 print:col-span-6 print:col-start-3">Konsultverksamhet</h2>
+        <div className="md:grid md:grid-cols-8 md:col-span-8 print:grid print:grid-cols-8 print:col-span-8">
+          <h3 className="font-semibold md:col-start-3 md:col-span-6 print:col-start-3 print:col-span-6">Trollsäker AB</h3>
+          <div className="text-sm md:col-span-2 print:col-span-2">
+            <div className="font-medium">Trollsäker AB</div>
+            <div className="">2020-12 &ndash;</div>
+          </div>
+          <div className="md:col-span-6 print:col-span-6">
+            <ul>
+              <li>Konsultuppdrag utförs genom mitt företag Trollsäker AB.</li>
+              <li><a href="https://trollsaker.com">https://trollsaker.com</a></li>
+              <li>Godkänd för F-skatt.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <div className="flex flex-col pt-8 gap-y-4 md:w-3/4 m-auto md:grid md:grid-cols-8 print:w-full print:grid print:grid-cols-8 xl:w-1/2">
         <h2 className="font-bold text-xl md:col-span-6 md:col-start-3 print:col-span-6 print:col-start-3">Arbetslivserfarenheter</h2>
         {employment?.map( (entry) => { return renderCV(entry, "swe") }) }
@@ -53,7 +69,12 @@ function App() {
       </div>
       <div className="break-before-page flex flex-col pt-8 gap-y-4 md:w-3/4 m-auto md:grid md:grid-cols-8 print:w-full print:grid print:grid-cols-8 xl:w-1/2">
         <h2 className="font-bold text-xl md:col-span-6 md:col-start-3 print:col-span-6 print:col-start-3">Språk</h2>
-        <p className="md:col-start-3 md:col-span-6 print:col-span-6 print:col-start-3">Modersmål svenska. Talar och skriver engelska flytande.</p>
+        <dl className="md:col-start-3 md:col-span-6 print:col-span-6 print:col-start-3 grid grid-cols-10">
+          <dt>Svenska</dt><dd className="col-span-9">Modersmål</dd>
+          <dt>Engelska</dt><dd className="col-span-9">Flytande</dd>
+          <dt>Franska</dt><dd className="col-span-9">Nybörjare</dd>
+          <dt>Spanska</dt><dd className="col-span-9">Nybörjare</dd>
+        </dl>
       </div>
       <div className="flex flex-col pt-8 gap-y-4 md:w-3/4 m-auto md:grid md:grid-cols-8 print:w-full print:grid print:grid-cols-8 xl:w-1/2">
         <h2 className="font-bold text-xl md:col-span-6 md:col-start-3 print:col-span-6 print:col-start-3">Förtroendeuppdrag</h2>

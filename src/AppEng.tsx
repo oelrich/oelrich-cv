@@ -1,0 +1,96 @@
+//import React from "react";
+import { loadCV, renderCV } from "./CvData";
+import QRCode from "react-qr-code";
+
+
+export default function AppEng() {
+  const cv_data = loadCV();
+  const education = cv_data.get("education");
+  const employment = cv_data.get("employment");
+  const training = cv_data.get("training");
+  const publications = cv_data.get("author");
+  const responsibilities = cv_data.get("responsibility");
+
+  const url = "https://oelrich.github.io/oelrich-cv/eng";
+
+  return (
+    <div className="w-full p-5">
+      <div className="flex flex-row gap-4 md:w-3/4 xl:w-1/2 md:m-auto print:w-full print:m-auto">
+        <div className="w-full">
+          <h1 className="text-3xl font-bold text-justify">CV - Johan Oelrich</h1>
+          <div className="flex flex-wrap justify-between gap-4 text-sm pt-4 md:justify-start print:justify-start">
+            <address className="flex flex-col gap-0.5">
+              <span>Johan Oelrich</span>
+              <span>Birkagatan 12A</span>
+              <span>752 39 Uppsala</span>
+              <span>Sweden</span>
+            </address>
+            <div className="flex flex-col gap-0.5">
+              <a href="mailto:johan@oelrich.se"><span>johan@oelrich.se</span></a>
+              <a href="https://oelrich.se">https://oelrich.se</a>
+              <a href="tel:+46707903153"><span>070-790 31 53</span></a>
+            </div>
+            <div className="flex flex-col gap-0.5">
+              <a href="https://github.com/oelrich">https://github.com/oelrich</a>
+              <a href="https://www.linkedin.com/in/johanoelrich"><span>linkedin.com/in/johanoelrich</span></a>
+            </div>
+          </div>
+        </div>
+        <div title="CV - Johan Oelrich" className="invisible hidden md:block md:visible print:block print:visible">
+          <QRCode value={url} size={128} />
+        </div>
+      </div>
+      <div className="flex flex-col pt-8 gap-y-4 md:w-3/4 m-auto md:grid md:grid-cols-8 print:w-full print:grid print:grid-cols-8 xl:w-1/2">
+        <h2 className="font-bold text-xl md:col-span-6 md:col-start-3 print:col-span-6 print:col-start-3">Consulting</h2>
+        <div className="md:grid md:grid-cols-8 md:col-span-8 print:grid print:grid-cols-8 print:col-span-8">
+          <h3 className="font-semibold md:col-start-3 md:col-span-6 print:col-start-3 print:col-span-6">Trollsäker AB</h3>
+          <div className="text-sm md:col-span-2 print:col-span-2">
+            <div className="font-medium">Trollsäker AB</div>
+            <div className="">2020-12 &ndash;</div>
+          </div>
+          <div className="md:col-span-6 print:col-span-6">
+            <ul>
+              <li>Consulting services are provided through my company Trollsäker AB.</li>
+              <li><a href="https://trollsaker.com">https://trollsaker.com</a></li>
+              <li>Approved for F-tax.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col pt-8 gap-y-4 md:w-3/4 m-auto md:grid md:grid-cols-8 print:w-full print:grid print:grid-cols-8 xl:w-1/2">
+        <h2 className="font-bold text-xl md:col-span-6 md:col-start-3 print:col-span-6 print:col-start-3">Work experience</h2>
+        {employment?.map((entry) => { return renderCV(entry, "eng") })}
+      </div>
+      <div className="break-before-page flex flex-col pt-8 gap-y-4 md:w-3/4 m-auto md:grid md:grid-cols-8 print:w-full print:grid print:grid-cols-8 xl:w-1/2">
+        <h2 className="font-bold text-xl md:col-span-6 md:col-start-3 print:col-span-6 print:col-start-3">Education</h2>
+        {education?.map((entry) => { return renderCV(entry, "eng") })}
+      </div>
+      <div className="flex flex-col pt-8 gap-y-4 md:w-3/4 m-auto md:grid md:grid-cols-8 print:w-full print:grid print:grid-cols-8 xl:w-1/2">
+        <h2 className="font-bold text-xl md:col-span-6 md:col-start-3 print:col-span-6 print:col-start-3">Training</h2>
+        {training?.map((entry) => { return renderCV(entry, "eng") })}
+      </div>
+      <div className="break-before-page flex flex-col pt-8 gap-y-4 md:w-3/4 m-auto md:grid md:grid-cols-8 print:w-full print:grid print:grid-cols-8 xl:w-1/2">
+        <h2 className="font-bold text-xl md:col-span-6 md:col-start-3 print:col-span-6 print:col-start-3">Languages</h2>
+        <dl className="md:col-start-3 md:col-span-6 print:col-span-6 print:col-start-3 grid grid-cols-10">
+          <dt>Swedish</dt><dd className="col-span-9">Native</dd>
+          <dt>English</dt><dd className="col-span-9">Fluent</dd>
+          <dt>French</dt><dd className="col-span-9">Beginner</dd>
+          <dt>Spanish</dt><dd className="col-span-9">Beginner</dd>
+        </dl>
+      </div>
+      <div className="flex flex-col pt-8 gap-y-4 md:w-3/4 m-auto md:grid md:grid-cols-8 print:w-full print:grid print:grid-cols-8 xl:w-1/2">
+        <h2 className="font-bold text-xl md:col-span-6 md:col-start-3 print:col-span-6 print:col-start-3">Responsibilities</h2>
+        {responsibilities?.map((entry) => { return renderCV(entry, "eng") })}
+      </div>
+      <div className="flex flex-col pt-8 gap-y-4 md:w-3/4 m-auto md:grid md:grid-cols-8 print:w-full print:grid print:grid-cols-8 xl:w-1/2">
+        <h2 className="font-bold text-xl md:col-span-6 md:col-start-3 print:col-span-6 print:col-start-3">Publications</h2>
+        {publications?.map((entry) => { return renderCV(entry, "eng") })}
+      </div>
+      <div className="flex flex-col pt-8 gap-y-4 md:w-3/4 m-auto md:grid md:grid-cols-8 print:w-full print:grid print:grid-cols-8 xl:w-1/2">
+        <h2 className="font-bold text-xl md:col-span-6 md:col-start-3 print:col-span-6 print:col-start-3">References</h2>
+        <p className="md:col-start-3 md:col-span-6 print:col-span-6 print:col-start-3">References provided upon request.</p>
+      </div>
+    </div>
+  );
+}
+

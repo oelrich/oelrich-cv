@@ -2,15 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import AppEng from './AppEng';
 import reportWebVitals from './reportWebVitals';
-import {Route, BrowserRouter,Routes} from 'react-router-dom';
+import {Route, BrowserRouter, Routes} from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path=":id" element={<App />} />
+        <Route path="/oelrich-cv" element={<App />} />
+        <Route path="/oelrich-cv/eng" element={<AppEng />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
