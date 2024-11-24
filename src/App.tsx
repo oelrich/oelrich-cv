@@ -49,7 +49,7 @@ function App() {
           <div className="md:col-span-6 print:col-span-6">
             <ul>
               <li>Konsultuppdrag utförs genom mitt företag Trollsäker AB.</li>
-              <li><a href="https://trollsaker.com">https://trollsaker.com</a></li>
+              <li><a href="https://trollsaker.com">https://trollsaker.se</a></li>
               <li>Godkänd för F-skatt.</li>
             </ul>
           </div>
